@@ -28,6 +28,7 @@ header {
 	position: absolute;
 	left: 0;
 	bottom: 3rem;
+	scale: 1.3;
 }
 
 .header__socials::after {
@@ -50,7 +51,7 @@ header {
 	left: calc(50% - 11rem); /* since width of image is 22rem */
 	/* same functionality as above 
 		left: 50%
-		transform: translateX(-50%) */
+		trc:\Users\lufei\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlansform: translateX(-50%) */
 }
 
 .me img {
@@ -66,4 +67,23 @@ header {
 	transform: rotate(90deg);
 	font-weight: 300;
 	font-size: 0.9rem;
+}
+
+
+/* ================= MEDIA QUERIES ================= */
+@media screen and (max-width: 600px) {
+	.scroll__down {
+		display: none;
+	}
+
+	.header__socials {
+		flex-direction: row;
+		justify-content: center;
+		position: static;
+		margin-top: 2rem;
+	}
+
+	.header__socials::after {
+		display: none;
+	}
 }
